@@ -50,21 +50,3 @@ If you have Node.js installed:
 3. Open: **[http://localhost:8080](http://localhost:8080)**
 
 ---
-
-## ☁️ Deploying to GitHub Pages (Best for sharing a live link)
-
-You can host this project completely for free on **GitHub Pages** so others can run it directly in their browser without downloading any files:
-
-1. Create a new public repository on GitHub (e.g., `aiprof_test`).
-2. Run these commands in your project folder to push the code:
-   ```bash
-   git init
-   git add .
-   git commit -m "initial commit"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<your-repo-name>.git
-   git push -u origin main
-   ```
-3. Go to your repository settings on GitHub: **Settings** > **Pages**.
-4. Under **Build and deployment** > **Branch**, select **`main`** and click **Save**.
-5. After 1-2 minutes, GitHub will publish your site and provide a live URL (e.g., `https://<your-username>.github.io/<your-repo-name>/`).
