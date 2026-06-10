@@ -2,25 +2,6 @@
 
 A premium, responsive, single-page Mock Assessment Portal designed to prepare candidates for placements and assessments. The visual theme, colors, and layout are modeled directly after the **[ai.prof](https://aiprof.com)** branding and design system.
 
----
-
-## 🌟 Key Features
-
-- 📑 **Unified Test Structure**: Combines Quantitative Aptitude (Q1-20), Logical Reasoning (Q21-40), and Verbal Ability/English (Q41-60) into a single, comprehensive 60-question mock exam.
-- ⏱️ **Unified Timer**: Features a 60-minute countdown timer with color-changing warnings when time runs low.
-- 🗂️ **Interactive Section Tabs**: Includes section navigation tabs at the top of the test window to allow quick jumps between sections.
-- 🎛️ **Interactive Question Palette**: Side grid containing 60 color-coded status buttons to jump directly to any question:
-  - ⚪ **Gray**: Unvisited
-  - 🔵 **Blue outline**: Current active question
-  - 🟢 **Emerald Green**: Answered
-  - 🟡 **Amber Yellow**: Marked for Review
-- 💾 **State Persistence**: Uses browser `localStorage` to save all progress, responses, and remaining time automatically. Progress survives page refreshes and browser crashes.
-- 📊 **Detailed Diagnostics**: Section-wise performance progress bars, score metrics, accuracy percentages, and time spent are computed instantly upon submission.
-- 📖 **Comprehensive Solutions Review**: Allows users to review all questions with correct/incorrect markers and detailed step-by-step explanations.
-- 📱 **Fully Responsive Layout**: Built with a mobile-friendly grid and glassmorphism styling.
-
----
-
 ## 📁 File Structure
 
 ```text
