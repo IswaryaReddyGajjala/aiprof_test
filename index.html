@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ai.prof Comprehensive Test Portal</title>
+  <meta name="description"
+    content="Take a unified placement mock test covering Quantitative Aptitude, Logical Reasoning, and Verbal English.">
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Sticky Glass Header -->
+  <header class="container">
+    <nav class="nav-container glass">
+      <a href="#" class="logo" id="nav-logo"
+        style="display: inline-flex; align-items: center; text-decoration: none; font-size: 28px; font-weight: 700; color: #0052FF; font-family: 'Outfit', sans-serif; position: relative; padding-right: 18px;">
+        ai.prof
+        <svg class="logo-symbol" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: -2px; right: 0;">
+          <path d="M2 2 L11 2 L11 11 Z" fill="#0052FF" />
+          <path d="M2 13 L11 13 L11 22 Z" fill="#0052FF" />
+          <path d="M13 2 L22 2 L22 11 Z" fill="#0052FF" />
+          <path d="M13 13 L22 13 L22 22 Z" fill="#0052FF" />
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link active" id="link-dashboard"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#" class="nav-link" id="link-results"><i class="fa-solid fa-chart-simple"></i> Analytics</a></li>
+        <li><button class="btn-primary" id="btn-header-action"><i class="fa-solid fa-rotate-right"></i> Reset
+            Progress</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="container">
+
+    <!-- SECTION 1: DASHBOARD / LANDING -->
+    <section id="section-dashboard" class="page-section active-section">
+      <div class="hero">
+        <div class="hero-tag">
+          <i class="fa-solid fa-sparkles"></i> India's AI-powered Learning + Hiring Ecosystem
+        </div>
+        <h1>India's first. <span class="orange-text">Unified Placement Assessment</span></h1>
+        <p>A comprehensive mock examination featuring Aptitude, Logical Reasoning, and English sections in one single
+          test. Designed to match standard placement assessment interfaces.</p>
+      </div>
+
+      <!-- Single Master Assessment Card -->
+      <div style="max-width: 720px; margin: 0 auto 60px;">
+        <div class="subject-card glass aptitude" id="card-assessment"
+          style="padding: 40px; border-left: 6px solid var(--primary); border-top: none;">
+          <div
+            style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+            <div>
+              <span class="subject-status status-in-progress" id="assessment-status-badge"
+                style="margin-bottom: 12px; font-weight: 700;">Ready to Start</span>
+              <h2 style="font-size: 28px; font-weight: 700; margin-top: 4px;">Placement Assessment Series</h2>
+            </div>
+            <div class="subject-icon" style="margin-bottom: 0;">
+              <i class="fa-solid fa-check-double"></i>
+            </div>
+          </div>
+
+          <p style="font-size: 16px; margin-bottom: 28px; color: var(--text-muted);">This test contains 3 sections with
+            20 questions each, which can be navigated freely. Answers are saved automatically and can be reviewed at the
+            end.</p>
+
+          <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 20px; margin-bottom: 32px; background: rgba(255, 255, 255, 0.4); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--border);">
+            <div>
+              <div style="font-size: 12px; color: var(--text-light); text-transform: uppercase; font-weight: 600;">Total
+                Questions</div>
+              <div style="font-size: 20px; font-weight: 700; color: var(--text-main);">60 Questions</div>
+            </div>
+            <div>
+              <div style="font-size: 12px; color: var(--text-light); text-transform: uppercase; font-weight: 600;">Test
+                Duration</div>
+              <div style="font-size: 20px; font-weight: 700; color: var(--text-main);">60 Minutes</div>
+            </div>
+            <div>
+              <div style="font-size: 12px; color: var(--text-light); text-transform: uppercase; font-weight: 600;">
+                Structure</div>
+              <div style="font-size: 15px; font-weight: 700; color: var(--text-main); margin-top: 4px;">Aptitude,
+                Reasoning, English</div>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+            <button class="btn-primary" id="btn-start-assessment" style="padding: 14px 36px; font-size: 16px;"><i
+                class="fa-solid fa-play"></i> Start Assessment</button>
+            <span style="font-weight: 500; font-size: 14px; color: var(--text-muted);"
+              id="assessment-progress-text"></span>
+          </div>
+
+          <div class="progress-bar-container" style="display: none; margin-top: 24px;"
+            id="assessment-progress-container">
+            <div class="progress-bar-fill aptitude-fill" id="assessment-progress-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: EXAM INTERFACE -->
+    <section id="section-exam" class="page-section">
+      <div style="display: flex; justify-content: flex-start; margin-bottom: 16px;">
+        <button class="btn-secondary" id="btn-exit-exam"><i class="fa-solid fa-arrow-left"></i> Back</button>
+      </div>
+
+      <!-- Unified Section Navigation Tabs -->
+      <div class="glass"
+        style="display: flex; gap: 4px; padding: 6px; border-radius: var(--radius-md); margin-bottom: 20px; background: rgba(255, 255, 255, 0.7);">
+        <button class="btn-secondary active-tab-btn" id="tab-aptitude"
+          style="flex: 1; justify-content: center; border-radius: calc(var(--radius-md) - 4px); font-weight: 600; padding: 12px;"><i
+            class="fa-solid fa-calculator"></i> Aptitude (Q1-20)</button>
+        <button class="btn-secondary" id="tab-reasoning"
+          style="flex: 1; justify-content: center; border-radius: calc(var(--radius-md) - 4px); font-weight: 600; padding: 12px;"><i
+            class="fa-solid fa-brain"></i> Reasoning (Q21-40)</button>
+        <button class="btn-secondary" id="tab-english"
+          style="flex: 1; justify-content: center; border-radius: calc(var(--radius-md) - 4px); font-weight: 600; padding: 12px;"><i
+            class="fa-solid fa-language"></i> English (Q41-60)</button>
+      </div>
+
+      <div class="exam-layout">
+
+        <!-- Main Question Area -->
+        <div class="exam-main glass">
+          <div class="exam-header">
+            <div class="section-indicator">
+              <span class="section-badge" id="exam-section-badge">Section</span>
+              <span class="question-number-tag" id="exam-question-number">Question 1 of 60</span>
+            </div>
+            <div>
+              <button class="btn-secondary" id="btn-mark-review"><i class="fa-regular fa-bookmark"></i> Mark for Review</button>
+            </div>
+          </div>
+
+          <div class="question-area">
+            <h2 class="question-text" id="question-text-display">Loading question...</h2>
+            <div class="options-list" id="options-container">
+              <!-- Render options dynamically -->
+            </div>
+          </div>
+
+          <div class="exam-footer">
+            <div class="footer-left">
+              <button class="btn-secondary" id="btn-prev-question"><i class="fa-solid fa-arrow-left"></i>
+                Previous</button>
+              <button class="btn-secondary" id="btn-clear-response" style="color: var(--status-error);"><i
+                  class="fa-solid fa-trash-can"></i> Clear Response</button>
+            </div>
+            <div class="footer-right">
+              <button class="btn-primary" id="btn-next-question">Next <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Navigation / Status -->
+        <div class="exam-sidebar">
+
+          <!-- Timer Card -->
+          <div class="timer-card glass">
+            <div class="timer-title">Time Remaining</div>
+            <div class="timer-display" id="exam-timer">
+              <i class="fa-regular fa-clock"></i> 60:00
+            </div>
+            <div class="timer-progress-container">
+              <div class="timer-progress-bar" id="exam-timer-bar"></div>
+            </div>
+          </div>
+
+          <!-- Question Grid Palette Card -->
+          <div class="grid-card glass">
+            <div class="grid-header" style="display: flex; justify-content: space-between; align-items: center;">
+              <span>Question Palette</span>
+              <span style="font-size: 12px; font-weight: 500; color: var(--text-light);" id="palette-summary-text">0/60
+                Answered</span>
+            </div>
+
+            <!-- Palette selector buttons (1-60 grid) -->
+            <div class="questions-grid" id="question-palette-grid"
+              style="grid-template-columns: repeat(5, 1fr); gap: 8px; max-height: 280px; overflow-y: auto; padding-right: 4px; margin-bottom: 20px;">
+              <!-- Render question items 1 to 60 dynamically -->
+            </div>
+
+            <button class="btn-accent" id="btn-submit-exam" style="width: 100%; justify-content: center;"><i
+                class="fa-solid fa-check-double"></i> Submit Entire Test</button>
+          </div>
+
+          <!-- Legend Card -->
+          <div class="legend-card glass">
+            <div class="legend-grid">
+              <div class="legend-item"><span class="legend-dot unvisited"></span> Unvisited</div>
+              <div class="legend-item"><span class="legend-dot current"></span> Current</div>
+              <div class="legend-item"><span class="legend-dot answered"></span> Answered</div>
+              <div class="legend-item"><span class="legend-dot marked"></span> Marked</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: RESULTS & ANALYTICS -->
+    <section id="section-results" class="page-section">
+      <div style="display: flex; justify-content: flex-start; margin-bottom: 16px;">
+        <button class="btn-secondary" id="btn-exit-results"><i class="fa-solid fa-arrow-left"></i> Back</button>
+      </div>
+      <div class="results-header-card glass">
+        <h2 class="percentage-text" id="results-headline">Assessment Analysis</h2>
+        <p class="feedback-text" id="results-feedback">Submit sections to view detailed scores and statistics.</p>
+
+        <div class="score-container">
+          <div class="score-circle">
+            <span class="score-val" id="results-overall-score">0 / 60</span>
+            <span class="score-lbl">Overall Score</span>
+          </div>
+          <div class="score-circle" style="border-color: var(--accent);">
+            <span class="score-val" id="results-overall-percentage" style="color: var(--accent);">0%</span>
+            <span class="score-lbl">Percentage</span>
+          </div>
+          <div class="score-circle" style="border-color: #10B981;">
+            <span class="score-val" id="results-overall-accuracy" style="color: #10B981;">0%</span>
+            <span class="score-lbl">Accuracy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Progress Bar Section -->
+      <div class="analysis-grid">
+
+        <!-- Score Details Breakdown Card -->
+        <div class="analysis-card glass">
+          <h4>Section-Wise Breakdown</h4>
+
+          <!-- Aptitude details -->
+          <div style="margin-bottom: 24px;">
+            <div style="display: flex; justify-content: space-between; font-weight: 600;">
+              <span>Quantitative Aptitude</span>
+              <span id="results-score-aptitude">0 / 20</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill aptitude-fill" id="results-progress-aptitude" style="width: 0%;"></div>
+            </div>
+            <div class="section-stat-row">
+              <span id="results-accuracy-aptitude">Accuracy: 0%</span>
+            </div>
+          </div>
+
+          <!-- Reasoning details -->
+          <div style="margin-bottom: 24px;">
+            <div style="display: flex; justify-content: space-between; font-weight: 600;">
+              <span>Logical Reasoning</span>
+              <span id="results-score-reasoning">0 / 20</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill reasoning-fill" id="results-progress-reasoning" style="width: 0%;"></div>
+            </div>
+            <div class="section-stat-row">
+              <span id="results-accuracy-reasoning">Accuracy: 0%</span>
+            </div>
+          </div>
+
+          <!-- English details -->
+          <div>
+            <div style="display: flex; justify-content: space-between; font-weight: 600;">
+              <span>Verbal Ability (English)</span>
+              <span id="results-score-english">0 / 20</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill english-fill" id="results-progress-english" style="width: 0%;"></div>
+            </div>
+            <div class="section-stat-row">
+              <span id="results-accuracy-english">Accuracy: 0%</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Performance Stats Overview -->
+        <div class="analysis-card glass" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <h4>Performance Stats</h4>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; flex-grow: 1; align-content: center;">
+            <div
+              style="text-align: center; padding: 16px; border-radius: var(--radius-md); background: #F8FAFC; border: 1px solid var(--border);">
+              <div style="font-size: 24px; font-weight: 700; color: var(--status-answered);" id="stat-total-correct">0
+              </div>
+              <div style="font-size: 13px; color: var(--text-light); font-weight: 600; text-transform: uppercase;">
+                Correct Answers</div>
+            </div>
+            <div
+              style="text-align: center; padding: 16px; border-radius: var(--radius-md); background: #F8FAFC; border: 1px solid var(--border);">
+              <div style="font-size: 24px; font-weight: 700; color: var(--status-error);" id="stat-total-incorrect">0
+              </div>
+              <div style="font-size: 13px; color: var(--text-light); font-weight: 600; text-transform: uppercase;">
+                Incorrect Answers</div>
+            </div>
+            <div
+              style="text-align: center; padding: 16px; border-radius: var(--radius-md); background: #F8FAFC; border: 1px solid var(--border);">
+              <div style="font-size: 24px; font-weight: 700; color: var(--text-muted);" id="stat-total-unanswered">60
+              </div>
+              <div style="font-size: 13px; color: var(--text-light); font-weight: 600; text-transform: uppercase;">
+                Unanswered</div>
+            </div>
+            <div
+              style="text-align: center; padding: 16px; border-radius: var(--radius-md); background: #F8FAFC; border: 1px solid var(--border);">
+              <div style="font-size: 24px; font-weight: 700; color: #8B5CF6;" id="stat-time-taken">00:00</div>
+              <div style="font-size: 13px; color: var(--text-light); font-weight: 600; text-transform: uppercase;">Time
+                Spent</div>
+            </div>
+          </div>
+          <div style="margin-top: 24px;">
+            <button class="btn-primary" style="width: 100%; justify-content: center;" id="btn-back-dashboard"><i
+                class="fa-solid fa-house"></i> Go to Dashboard</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Solutions/Review Section -->
+      <div id="results-review-area" class="glass" style="padding: 40px; display: none;">
+        <div class="review-header-row">
+          <h3>Question Review & Solutions</h3>
+          <div class="review-filters">
+            <button class="filter-btn active" data-filter="all">All Questions</button>
+            <button class="filter-btn" data-filter="correct" style="color: var(--status-answered);">Correct</button>
+            <button class="filter-btn" data-filter="incorrect" style="color: var(--status-error);">Incorrect</button>
+            <button class="filter-btn" data-filter="unanswered" style="color: var(--text-muted);">Unanswered</button>
+          </div>
+        </div>
+
+        <div class="review-list" id="review-questions-list">
+          <!-- Render review questions dynamically -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Submit Exam Confirmation Modal -->
+  <div class="modal-overlay" id="submit-modal">
+    <div class="modal-content glass">
+      <div class="modal-icon">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </div>
+      <h3 class="modal-title">Submit Assessment?</h3>
+      <p class="modal-text">Are you sure you want to end the test and submit your answers? You cannot modify answers
+        after submitting.</p>
+
+      <div class="modal-stats">
+        <div class="stat-box">
+          <div class="stat-val" id="modal-stat-answered">0</div>
+          <div class="stat-lbl">Answered</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-val" id="modal-stat-marked">0</div>
+          <div class="stat-lbl">Marked</div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-secondary" id="btn-modal-cancel">Go Back</button>
+        <button class="btn-accent" id="btn-modal-confirm">Confirm Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="container">
+    <p>&copy; 2026 <a href="#" id="footer-logo" style="display: inline-flex; align-items: center; text-decoration: none; font-size: 15px; font-weight: 700; color: var(--text-muted); font-family: 'Outfit', sans-serif; position: relative; padding-right: 12px; margin-right: 4px;">
+        ai.prof
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: -1px; right: 0;">
+          <path d="M2 2 L11 2 L11 11 Z" fill="var(--text-light)" />
+          <path d="M2 13 L11 13 L11 22 Z" fill="var(--text-light)" />
+          <path d="M13 2 L22 2 L22 11 Z" fill="var(--text-light)" />
+          <path d="M13 13 L22 13 L22 22 Z" fill="var(--text-light)" />
+        </svg>
+      </a> mock portal. All rights reserved.</p>
+    <p style="margin-top: 8px; font-size: 12px; color: var(--text-light);">Designed to match the aesthetic of India's
+      first AI-powered Mock Assessment ecosystem.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

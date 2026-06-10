@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "question": "Find the synonym of the word: 'ABANDON'",
+    "options": ["Forsake", "Keep", "Cherish", "Adopt"],
+    "answer": 0,
+    "explanation": "'Abandon' means to completely give up or desert. 'Forsake' is a direct synonym. 'Keep', 'Cherish', and 'Adopt' are antonyms or unrelated."
+  },
+  {
+    "id": 2,
+    "question": "Find the antonym of the word: 'FRIENDLY'",
+    "options": ["Hostile", "Amiable", "Warm", "Affable"],
+    "answer": 0,
+    "explanation": "'Friendly' means showing kindly interest and goodwill. 'Hostile' means unfriendly or antagonistic, which is the direct antonym."
+  },
+  {
+    "id": 3,
+    "question": "Identify the part of the sentence containing a grammatical error:\n\"He is one of those men (A) / who is always ready (B) / to help others (C) / in times of need (D).\"",
+    "options": ["He is one of those men", "who is always ready", "to help others", "in times of need"],
+    "answer": 1,
+    "explanation": "The relative pronoun 'who' refers to the plural noun 'men'. Therefore, the verb that follows must be plural. 'who is always' should be corrected to 'who are always'."
+  },
+  {
+    "id": 4,
+    "question": "Fill in the blank with the most appropriate preposition:\n\"The teacher warned him _______ making the same mistake again.\"",
+    "options": ["against", "of", "from", "for"],
+    "answer": 0,
+    "explanation": "The verb 'warn' is followed by 'against' when warning someone not to do a particular action. Thus, 'warned him against making' is correct."
+  },
+  {
+    "id": 5,
+    "question": "What is the meaning of the idiom: 'To burn the candle at both ends'?",
+    "options": [
+      "To work extremely hard and exhaust oneself by sleeping late and waking early",
+      "To save money diligently by avoiding unnecessary expenses",
+      "To display courage in the face of absolute danger",
+      "To act foolishly and lose one's livelihood"
+    ],
+    "answer": 0,
+    "explanation": "'To burn the candle at both ends' means to exhaust oneself by doing too much, especially by going to bed late and getting up early to work."
+  },
+  {
+    "id": 6,
+    "question": "Select the option with the correct spelling:",
+    "options": ["Committee", "Commitee", "Comitee", "Committe"],
+    "answer": 0,
+    "explanation": "The correct spelling is 'Committee' with double 'm', double 't', and double 'e'."
+  },
+  {
+    "id": 7,
+    "question": "Choose the word that best fits the blank:\n\"Despite his best efforts, he could not _______ the obstacle.\"",
+    "options": ["surmount", "avoid", "create", "bypass"],
+    "answer": 0,
+    "explanation": "'Surmount' means to overcome a difficulty or obstacle. In the context of 'efforts' and 'obstacles', 'surmount' fits best."
+  },
+  {
+    "id": 8,
+    "question": "Convert the sentence to Passive Voice:\n\"The chef prepared a delicious meal.\"",
+    "options": [
+      "A delicious meal was prepared by the chef.",
+      "A delicious meal is prepared by the chef.",
+      "A delicious meal had been prepared by the chef.",
+      "A delicious meal was preparing by the chef."
+    ],
+    "answer": 0,
+    "explanation": "The active voice is in the Simple Past tense ('prepared'). The passive voice takes the form: Object + was/were + past participle + by + Subject. So, 'A delicious meal was prepared by the chef' is correct."
+  },
+  {
+    "id": 9,
+    "question": "Find the synonym of the word: 'CANDID'",
+    "options": ["Frank", "Deceitful", "Evasive", "Shy"],
+    "answer": 0,
+    "explanation": "'Candid' means truthful, straightforward, or frank. 'Deceitful' and 'Evasive' are antonyms."
+  },
+  {
+    "id": 10,
+    "question": "Find the antonym of the word: 'TRANSITORY'",
+    "options": ["Permanent", "Temporary", "Fleeting", "Brief"],
+    "answer": 0,
+    "explanation": "'Transitory' means not permanent; temporary or brief. Its antonym is 'Permanent'."
+  },
+  {
+    "id": 11,
+    "question": "Choose the grammatically correct correction for the underlined part:\n\"_If I was you_, I would accept the job offer immediately.\"",
+    "options": ["If I were you", "If I am you", "If I had been you", "No correction required"],
+    "answer": 0,
+    "explanation": "This is a conditional sentence expressing an imaginary or hypothetical situation (subjunctive mood). In such cases, 'were' is used instead of 'was' for all subjects."
+  },
+  {
+    "id": 12,
+    "question": "Choose the one-word substitute for the phrase:\n\"A person who is unable to pay his debts.\"",
+    "options": ["Insolvent", "Borrower", "Vagrant", "Destitute"],
+    "answer": 0,
+    "explanation": "An 'insolvent' person is someone who cannot pay their debts. 'Destitute' means extremely poor, but not necessarily referring to debt default."
+  },
+  {
+    "id": 13,
+    "question": "Fill in the blank with the correct preposition:\n\"She is highly proficient _______ English.\"",
+    "options": ["in", "at", "with", "about"],
+    "answer": 0,
+    "explanation": "The adjective 'proficient' is followed by the preposition 'in' when referring to a language or field of study."
+  },
+  {
+    "id": 14,
+    "question": "What is the meaning of the idiom: 'Spill the beans'?",
+    "options": [
+      "To reveal a secret prematurely",
+      "To waste food unnecessarily",
+      "To make a mess in the kitchen",
+      "To speak in a very loud voice"
+    ],
+    "answer": 0,
+    "explanation": "'Spill the beans' is an informal idiom that means to disclose secret information, often unintentionally or prematurely."
+  },
+  {
+    "id": 15,
+    "question": "Select the option with the correct spelling:",
+    "options": ["Occurrence", "Occurence", "Ocurrence", "Ocurrence"],
+    "answer": 0,
+    "explanation": "The correct spelling is 'Occurrence' with double 'c' and double 'r'."
+  },
+  {
+    "id": 16,
+    "question": "Find the synonym of the word: 'PRUDENT'",
+    "options": ["Wise", "Rash", "Careless", "Imprudent"],
+    "answer": 0,
+    "explanation": "'Prudent' means acting with or showing care and thought for the future. 'Wise' is the closest synonym."
+  },
+  {
+    "id": 17,
+    "question": "Find the antonym of the word: 'AFFLUENT'",
+    "options": ["Poor", "Wealthy", "Rich", "Prosperous"],
+    "answer": 0,
+    "explanation": "'Affluent' means having a great deal of money; wealthy. Its opposite is 'Poor'."
+  },
+  {
+    "id": 18,
+    "question": "Identify the part of the sentence containing a grammatical error:\n\"Neither of the two candidates (A) / have submitted (B) / their application forms (C) / on time (D).\"",
+    "options": ["Neither of the two candidates", "have submitted", "their application forms", "on time"],
+    "answer": 1,
+    "explanation": "When 'neither' is used as a pronoun referring to two subjects, it takes a singular verb. Therefore, 'have submitted' should be corrected to 'has submitted'."
+  },
+  {
+    "id": 19,
+    "question": "Convert to Indirect Narration:\nHe said, \"I am writing a letter.\"",
+    "options": [
+      "He said that he was writing a letter.",
+      "He said that he is writing a letter.",
+      "He said that he had been writing a letter.",
+      "He says that he is writing a letter."
+    ],
+    "answer": 0,
+    "explanation": "The reporting verb is in the past tense ('said'), so the present continuous tense in the direct speech ('am writing') changes to past continuous tense ('was writing')."
+  },
+  {
+    "id": 20,
+    "question": "Fill in the blank with the correct word:\n\"He has been living in this city _______ 2015.\"",
+    "options": ["since", "for", "from", "during"],
+    "answer": 0,
+    "explanation": "We use 'since' to refer to a specific starting point in time (2015) in present perfect continuous sentences. We use 'for' to refer to a duration."
+  }
+]

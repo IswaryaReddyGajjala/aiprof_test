@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "A sum of money at simple interest amounts to $815 in 3 years and to $854 in 4 years. What is the principal sum?",
+    "options": ["$650", "$690", "$698", "$700"],
+    "answer": 2,
+    "explanation": "Simple Interest for 1 year = Amount in 4 years - Amount in 3 years = $854 - $815 = $39.\nSimple Interest for 3 years = $39 * 3 = $117.\nPrincipal = Amount in 3 years - SI for 3 years = $815 - $117 = $698."
+  },
+  {
+    "id": 2,
+    "question": "Two pipes A and B can fill a tank in 36 hours and 45 hours respectively. If both pipes are opened simultaneously, how much time will they take to fill the tank?",
+    "options": ["20 hours", "18 hours", "25 hours", "22 hours"],
+    "answer": 0,
+    "explanation": "Part filled by A in 1 hour = 1/36.\nPart filled by B in 1 hour = 1/45.\nTogether in 1 hour = 1/36 + 1/45 = (5 + 4)/180 = 9/180 = 1/20.\nSo, they will fill the tank in 20 hours."
+  },
+  {
+    "id": 3,
+    "question": "A train running at a speed of 60 km/hr crosses a pole in 9 seconds. What is the length of the train?",
+    "options": ["120 meters", "180 meters", "324 meters", "150 meters"],
+    "answer": 3,
+    "explanation": "Speed of train = 60 * (5/18) m/sec = 50/3 m/sec.\nLength of train = Speed * Time = (50/3) * 9 = 150 meters."
+  },
+  {
+    "id": 4,
+    "question": "If a person sells an article for $350 and gains 25% profit, what is the cost price of the article?",
+    "options": ["$280", "$300", "$275", "$290"],
+    "answer": 0,
+    "explanation": "Selling Price (SP) = $350, Profit = 25%.\nCost Price (CP) = SP * 100 / (100 + Profit %) = 350 * 100 / 125 = 350 * 4 / 5 = 70 * 4 = $280."
+  },
+  {
+    "id": 5,
+    "question": "The average age of a class of 30 students is 15 years. If the age of the teacher is included, the average age increases by 1 year. What is the age of the teacher?",
+    "options": ["40 years", "46 years", "31 years", "45 years"],
+    "answer": 1,
+    "explanation": "Total age of 30 students = 30 * 15 = 450 years.\nTotal count with teacher = 31 people.\nNew average age = 16 years.\nTotal age with teacher = 31 * 16 = 496 years.\nAge of teacher = 496 - 450 = 46 years."
+  },
+  {
+    "id": 6,
+    "question": "A box contains 5 red, 8 blue, and 3 green balls. If two balls are drawn at random, what is the probability that both are blue?",
+    "options": ["7/30", "14/15", "1/15", "7/15"],
+    "answer": 0,
+    "explanation": "Total balls = 5 + 8 + 3 = 16.\nNumber of ways to draw 2 balls from 16 = 16C2 = (16 * 15) / (2 * 1) = 120.\nNumber of ways to draw 2 blue balls from 8 = 8C2 = (8 * 7) / (2 * 1) = 28.\nProbability = 28 / 120 = 7/30."
+  },
+  {
+    "id": 7,
+    "question": "In how many different ways can the letters of the word 'LEADING' be arranged such that the vowels always come together?",
+    "options": ["360", "720", "1440", "5040"],
+    "answer": 1,
+    "explanation": "The word 'LEADING' has 7 letters: L, E, A, D, I, N, G.\nVowels are E, A, I (3 vowels).\nConsonants are L, D, N, G (4 consonants).\nTreating the vowels (E, A, I) as a single entity, we have 4 consonants + 1 group = 5 entities.\nThese 5 entities can be arranged in 5! = 120 ways.\nThe 3 vowels can be arranged among themselves in 3! = 6 ways.\nTotal arrangements = 120 * 6 = 720 ways."
+  },
+  {
+    "id": 8,
+    "question": "A man can row 15 km/h in still water. If the velocity of the stream is 3 km/h, what is the time taken to row a distance of 36 km downstream?",
+    "options": ["2 hours", "2.5 hours", "3 hours", "1.8 hours"],
+    "answer": 0,
+    "explanation": "Downstream speed = Speed in still water + Stream speed = 15 + 3 = 18 km/h.\nTime taken = Distance / Downstream speed = 36 / 18 = 2 hours."
+  },
+  {
+    "id": 9,
+    "question": "Two numbers are in the ratio 3:5. If 9 is subtracted from each, the new numbers are in the ratio 12:23. What is the smaller number?",
+    "options": ["33", "55", "27", "49"],
+    "answer": 0,
+    "explanation": "Let the numbers be 3x and 5x.\nAccording to the problem, (3x - 9) / (5x - 9) = 12/23.\n23 * (3x - 9) = 12 * (5x - 9)\n69x - 207 = 60x - 108\n9x = 99 => x = 11.\nSmaller number = 3x = 3 * 11 = 33."
+  },
+  {
+    "id": 10,
+    "question": "The difference between simple and compound interest on a sum of money for 2 years at 10% per annum is $150. What is the principal sum?",
+    "options": ["$12,000", "$15,000", "$18,000", "$20,000"],
+    "answer": 1,
+    "explanation": "For 2 years, Difference (D) = P * (R/100)^2.\n150 = P * (10/100)^2\n150 = P * (1/10)^2\n150 = P / 100\nP = 150 * 100 = $15,000."
+  },
+  {
+    "id": 11,
+    "question": "A can do a piece of work in 10 days and B can do it in 15 days. They work together for 4 days. What is the fraction of work left?",
+    "options": ["1/3", "2/3", "1/5", "2/5"],
+    "answer": 0,
+    "explanation": "A's 1 day work = 1/10, B's 1 day work = 1/15.\nTogether 1 day work = 1/10 + 1/15 = 5/30 = 1/6.\nWork done in 4 days = 4 * (1/6) = 2/3.\nRemaining work = 1 - 2/3 = 1/3."
+  },
+  {
+    "id": 12,
+    "question": "Find the greatest number which on dividing 1657 and 2037 leaves remainders of 6 and 5 respectively.",
+    "options": ["127", "113", "235", "305"],
+    "answer": 0,
+    "explanation": "The required number is the HCF of (1657 - 6) and (2037 - 5), which is HCF of 1651 and 2032.\n2032 = 1651 * 1 + 381\n1651 = 381 * 4 + 127\n381 = 127 * 3 + 0.\nTherefore, the HCF is 127."
+  },
+  {
+    "id": 13,
+    "question": "By selling 45 lemons for $40, a man loses 20%. How many lemons should he sell for $24 to gain 20% in the transaction?",
+    "options": ["18", "20", "15", "24"],
+    "answer": 0,
+    "explanation": "Let CP of 45 lemons be x.\nSince there is a 20% loss when selling for $40:\n0.8 * x = 40 => x = 50. So CP of 45 lemons is $50.\nCP of 1 lemon = 50 / 45 = 10/9.\nTo gain 20%, SP of 1 lemon = CP * 1.2 = (10/9) * 1.2 = 12/9 = 4/3.\nFor $24, number of lemons = 24 / (4/3) = 24 * 3 / 4 = 18 lemons."
+  },
+  {
+    "id": 14,
+    "question": "A starts a business with $3500 and after 5 months, B joins A as a partner. After a year, the profit is divided in the ratio 2:3. What was B's contribution?",
+    "options": ["$7500", "$9000", "$6000", "$8000"],
+    "answer": 1,
+    "explanation": "A invested $3500 for 12 months. Value of A's investment = 3500 * 12.\nB invested x dollars for (12 - 5) = 7 months. Value of B's investment = x * 7.\nRatio of investment = Ratio of profit => (3500 * 12) / (7x) = 2/3\n500 * 12 / x = 2/3 => 6000 / x = 2/3\n2x = 18000 => x = $9000."
+  },
+  {
+    "id": 15,
+    "question": "If the radius of a circle is increased by 50%, what is the percentage increase in its area?",
+    "options": ["125%", "100%", "75%", "150%"],
+    "answer": 0,
+    "explanation": "Let original radius be r. Area = pi * r^2.\nNew radius = 1.5r. New area = pi * (1.5r)^2 = 2.25 * pi * r^2.\nIncrease in area = 2.25 * pi * r^2 - pi * r^2 = 1.25 * pi * r^2.\nPercentage increase = 1.25 * 100% = 125%."
+  },
+  {
+    "id": 16,
+    "question": "Find the odd number out in this series: 3, 5, 7, 12, 17, 19.",
+    "options": ["12", "17", "7", "3"],
+    "answer": 0,
+    "explanation": "All numbers except 12 are prime numbers. 12 is an even composite number."
+  },
+  {
+    "id": 17,
+    "question": "A vendor bought toffees at 6 for a dollar. How many for a dollar must he sell to gain 20% profit?",
+    "options": ["5", "4", "3", "4.5"],
+    "answer": 0,
+    "explanation": "CP of 6 toffees = $1.\nCP of 1 toffee = $1/6.\nSP of 1 toffee to gain 20% = (1/6) * 1.20 = 1.20 / 6 = $0.20 = $1/5.\nTherefore, he must sell 5 toffees for a dollar."
+  },
+  {
+    "id": 18,
+    "question": "The age of a father is 4 times the age of his son. If 5 years ago, the father's age was 7 times the age of his son at that time, what is the father's present age?",
+    "options": ["40 years", "35 years", "45 years", "30 years"],
+    "answer": 0,
+    "explanation": "Let son's present age be x. Father's present age = 4x.\n5 years ago: Father's age was 4x - 5, Son's age was x - 5.\nAccording to problem: 4x - 5 = 7(x - 5)\n4x - 5 = 7x - 35\n3x = 30 => x = 10.\nFather's present age = 4x = 40 years."
+  },
+  {
+    "id": 19,
+    "question": "A train 125 m long passes a man, running at 5 km/hr in the same direction in which the train is going, in 10 seconds. What is the speed of the train?",
+    "options": ["50 km/hr", "45 km/hr", "55 km/hr", "60 km/hr"],
+    "answer": 0,
+    "explanation": "Relative speed = Length of train / Time = 125 / 10 = 12.5 m/sec.\nRelative speed in km/hr = 12.5 * (18/5) = 45 km/hr.\nSince they run in the same direction, Relative Speed = Speed of Train - Speed of Man.\n45 = Speed of Train - 5 => Speed of Train = 50 km/hr."
+  },
+  {
+    "id": 20,
+    "question": "In what ratio must a grocer mix two varieties of tea worth $60 per kg and $65 per kg so that by selling the mixture at $68.20 per kg he may gain 10%?",
+    "options": ["3:2", "2:3", "3:5", "4:5"],
+    "answer": 0,
+    "explanation": "SP of mixture = $68.20, Gain = 10%.\nCP of mixture = 68.20 * 100 / 110 = $62 per kg.\nBy rule of alligation:\nCheaper price: 60, Dearer price: 65, Mean price: 62.\n(Dearer - Mean) : (Mean - Cheaper) = (65 - 62) : (62 - 60) = 3:2."
+  }
+]
